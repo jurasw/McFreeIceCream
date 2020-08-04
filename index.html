@@ -17,9 +17,11 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 28px;
   text-align: center;
   margin-bottom: 15px;
+  padding: 1%;
+  min-height: 90px;
 }
 #cupon{
     width: 90%;
@@ -40,17 +42,36 @@ button {
 
 #dateandcode{
     overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 #jsone{
     float:left;
     width: 50%;
+    left: 5%;
 }
 
 #jstwo{
     overflow: hidden;
     width: 50%;
+    right: 5%;
 }
+#para{
+    padding: 5%;
+}
+
+#wys{
+    text-decoration: none;
+
+  font-size: 16px;
+}
+h4{
+    margin: 0;
+}
+
+
+
         </style>
 
 
@@ -81,10 +102,10 @@ button {
 
 <img id="cupon" class="center" src="icecream.jpg">
 
-<p>Kupon ten upoważnia do jednokrotnego odbioru produktu gratis. Kupon ważny jest przez 7 dni od czasu jego wygenerowania i może być zrealizowany w dowolnej restauracji McDonald's w Polsce z wyłączeniem restauracji znajdujących się na terenie Portu Lotniczego im. Frederyka Chopina w Warszawie oraz Portu Lotniczego im. Lecha Wałęsy w Gdańsku. Szczegółowy regulamin ankiety „Opinia Gości” znajduję się na stronie <a href="https://www.w3schools.com">www.mcdonalds.pl</a> w sekcji <a href="https://www.w3schools.com">Regulaminy</a> </p>
+<p class="center" id="para">Kupon ten upoważnia do jednokrotnego odbioru produktu gratis. Kupon ważny jest przez 7 dni od czasu jego wygenerowania i może być zrealizowany w dowolnej restauracji McDonald's w Polsce z wyłączeniem restauracji znajdujących się na terenie Portu Lotniczego im. Frederyka Chopina w Warszawie oraz Portu Lotniczego im. Lecha Wałęsy w Gdańsku. Szczegółowy regulamin ankiety „Opinia Gości” znajduję się na stronie <a href="https://www.w3schools.com">www.mcdonalds.pl</a> w sekcji <a href="https://www.w3schools.com">Regulaminy</a> </p>
     
-<button class="center" >DRUKUJ / ZAPISZ JAKO PDF</button>
-<button class="center">PRZEŚLIJ KUPON <h4>WYSYŁKA W 24 GODZIN</h4></button>
+<button class="center" >DRUKUJ / <br/> ZAPISZ JAKO PDF</button>
+<button class="center">PRZEŚLIJ KUPON <div id="wys">(WYSYŁKA W 24 GODZIN)</div> </button>
 
 
 
@@ -102,9 +123,9 @@ document.getElementById("date").innerHTML = today;
 
     var randomChars = 'abcdefghijklmnopqrstuvwxyz';
 
-       var a = randomChars[Math.floor(Math.random() * 27)];
-      var  b = randomChars[Math.floor(Math.random() * 27)];
-      var  c = randomChars[Math.floor(Math.random() * 27)];
+       var a = randomChars[Math.floor(Math.random() * 26)];
+      var  b = randomChars[Math.floor(Math.random() * 26)];
+      var  c = randomChars[Math.floor(Math.random() * 26)];
 
 
 
